@@ -106,20 +106,7 @@ excluding 2020, with the miss shown (not hidden) in
 This is worth leading with in an interview, not glossing over — it's a
 concrete example of knowing a model's limits.
 
-## Demo app
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-Lets you tweak indicator values with sliders and see the model's GDP growth
-forecast update live.
-
-## Reproducing everything from scratch
-
-```bash
-pip install -r requirements.txt
-python data/build_dataset.py       # build the macro panel
 python src/feature_engineering.py  # inspect the feature selection
 python src/train_models.py         # train + evaluate, saves models/ and reports/metrics.json
 python src/visualize.py            # regenerate reports/figures/
